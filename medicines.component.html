@@ -1,0 +1,23 @@
+<p>
+  medicines 
+</p>
+<div class="pipes">
+  <p>{{myValue | uppercase}}</p>
+  <p>{{myDate | date:"MM/dd/yy"}}</p>
+  <p>{{myvalue | slice:3:7 | uppercase}}</p>
+  <hr>
+  <input type="text" #input (keyup)="0">
+  <p>{{input.value}}</p>
+  <button (click)="onLog()">Log</button>
+  <button (click)="onStore()">Store</button>
+  <button (click)="onSend()">Send</button>
+  <hr>
+  <button (click)="onGet()">Refresh storage</button>
+  <h3>storage</h3>
+  <ul>
+    <li>
+</li>
+  </ul>
+  <h3>received value</h3>
+  <p>{{value}}</p>
+</div>
